@@ -130,27 +130,69 @@
         }
 
         .gallery {
+            display: flex;
             width: 50%;
+            height: 100px;
         }
 
         .galleryPic {
             max-height: 60px;
         }
+        .pic1 {
+            background: url("img/2.jpg");
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+        }
+        .pic11 {
+            background: url("img/2.jpg");
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+        }
+        .pic1:hover .pic11 {
+            position: absolute;
+            right: 20%;
+            top: 30%;
+            transform: scale(4);
+        }
+        .pic2 {
 
-        .galleryPic:hover {
-            color: #424242;
-            /*-webkit-transition: all .3s ease-in;
-            -moz-transition: all .3s ease-in;
-            -ms-transition: all .3s ease-in;
-            -o-transition: all .3s ease-in;
-            transition: all .3s ease-in;
-            opacity: 1;
-            transform: scale(2.15);
-            -ms-transform: scale(2.15); /* IE 9 */
-            /* -webkit-transform: scale(2.15);
-            position: relative; */
-            right: 100px;
-            bottom: 150px;
+            background: url("img/3.jpg");
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+        }
+        .pic22 {
+            background: url("img/3.jpg");
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+        }
+        .pic2:hover .pic22 {
+            position: absolute;
+            right: 20%;
+            top: 30%;
+            transform: scale(4);
+        }
+        .pic3 {
+
+            background: url("img/4.jpg");
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+        }
+        .pic33 {
+            background: url("img/4.jpg");
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+        }
+        .pic3:hover .pic33 {
+            position: absolute;
+            right: 20%;
+            top: 30%;
+            transform: scale(4);
         }
         footer {
             width: 50%;
@@ -175,9 +217,11 @@
         .rightBackground {
             position: fixed;
             right: 15%;
-            top: 25%;
+            top: 80%;
             height: 100px;
         }
+
+
     </style>
 </head>
 <body>
@@ -195,37 +239,48 @@
                 <br />
             </header>
             <div class="nameContainer">
-                <!--Name of the person or business-->
-                <li class="name nameBlock">Mr. Cat</li>
-                <li class="age nameBlock">(12)</li>
-                <!--"Add friend" button-->
-                <li class="befriendButton nameBlock">Add friend</li>
-                <!--"Block person" button-->
-                <li class="blockButton nameBlock">Block</li>
-            </div>
-            <!-- Left bottom side container -->
-            <div class="leftBottomSide">
-                <!--Image of the person or business-->
-                <img class="profilePic" src="img/mr_cat_by_vanessa_fentazy.jpg" alt="Image of Mr. Cat" />
-                <!--About the person or business-->
-                <div class="aboutBlock">
-                    <ul>Location: Helsinki</ul>
-                    <ul>Friends: 126</ul>
-                    <ul>Education: Academy of cat independence</ul>
-                    <ul>Hobbies: Cat activism</ul>
-                    <ul>Enemies: Dogs in general</ul>
+                    <!--Name of the person or business-->
+                    <li class="name nameBlock">Mr. Cat</li>
+                    <li class="age nameBlock">(12)</li>
+                    <!--"Add friend" button-->
+                    <li class="befriendButton nameBlock">Add friend</li>
+                    <!--"Block person" button-->
+                    <li class="blockButton nameBlock">Block</li>
                 </div>
+                <!-- Left bottom side container -->
+                <div class="leftBottomSide">
+                    <!--Image of the person or business-->
+                    <img class="profilePic" src="img/mr_cat_by_vanessa_fentazy.jpg" alt="Image of Mr. Cat" />
+                    <!--About the person or business-->
+                    <div class="aboutBlock">
+                        <ul>Location: Helsinki</ul>
+                        <ul>Friends: 126</ul>
+                        <ul>Education: Academy of cat independence</ul>
+                        <ul>Hobbies: Cat activism</ul>
+                        <ul>Enemies: Dogs in general</ul>
+                    </div>
 
+                </div>
+                <br />
+                <!-- Gallery -->
+                <div class="gallery">
+                    <!-- Image1 -->
+                    <div class="pic1">
+                        <div class="pic11">
+                        </div>
+                    </div>
+                    <div class="pic2">
+                        <div class="pic22">
+                        </div>
+                    </div>
+                    <div class="pic3">
+                        <div class="pic33">
+                        </div>
+                    </div>
+                    <!-- <img class="pic2 galleryPic" src="img/3.jpg" alt="Gallery image 3" />
+                    <img class="pic3 galleryPic" src="img/4.jpg" alt="Gallery image 4" /> -->
+                </div>
             </div>
-            <br />
-            <!-- Gallery -->
-            <div class="gallery">
-                <img class="galleryPic" src="img/2.jpg" alt="Gallery image 2" />
-                <img class="galleryPic" src="img/3.jpg" alt="Gallery image 3" />
-                <img class="galleryPic" src="img/4.jpg" alt="Gallery image 4" />
-            </div>
-            </div>
-
             <!--footer-->
             <footer>
                 <a class="footerButtons">Groups</a>
